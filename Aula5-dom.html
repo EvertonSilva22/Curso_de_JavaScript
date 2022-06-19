@@ -17,6 +17,7 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <p class="teste">Aprendendo a utilizar o <strong>QuerySelector</strong> em JavaScript.</p>
     <div id="msg">Clique em mim</div>
     <script>
         /*window.document.write('Olá, Mundo!')  Vai aparecer uma mensagem
@@ -28,6 +29,8 @@
         d.style.background ='yellow'
         d.style.color ='Black'
         d.innerText ='Estou aguardando...'
+        var q = window.document.querySelector('p.teste')
+        q.style.background ='green'
     </script>    
 </body>
 </html>
