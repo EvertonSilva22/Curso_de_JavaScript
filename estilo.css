@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(56, 56, 247);
+    color: white;
+    font: normal 25pt arial;
+}
+strong{
+    color: black;
+    font: bold 18pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+}
