@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: blue;
+            color: white;
+            font-size: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="teste">Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        /*window.document.write('Está escrito assim: ' + p1.innerText) Retorna o valor dentro do primeiro Paragrafo*/
+        
+        /* selecionando por tag */
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'
+        /* selecionando por tag */
+
+        /* selecionando por ID */
+        var d = window.document.getElementById('msg')
+        d.style.background = 'red'
+        d.innerText = 'Estou aguardando...'
+        /* selecionando por ID */
+
+        /* selecionando por nome */
+        var h1 = window.document.getElementsByName('h1')[0]
+        h1.innerText = 'Olá!'
+        /* selecionando por nome */
+
+    </script>
+</body>
+</html>
