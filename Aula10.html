@@ -17,20 +17,27 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="Clicar()" onmouseenter="Entrar()" onmouseout="Sair()">
+    
+    <!-- <div id="area" onclick="Clicar()" onmouseenter="Entrar()" onmouseout="Sair()">  Animação direto em HTML-->
+    <div id="area">
         Interaja...
     </div>
 
     <script>
         var Area = window.document.getElementById('area')
+        Area.addEventListener('click', Clicar)
+        Area.addEventListener('mouseenter', Entrar)
+        Area.addEventListener('mouseout', Sair)
         function Clicar() {
         Area.innerText = 'Clicou!'
+        Area.style.background ='red'
         }
         function Entrar(){
             Area.innerText = 'Entrou!'
         }
         function Sair(){
             Area.innerText = 'Saiu!'
+            Area.style.background ='green'
         }
     </script>
 </body>
