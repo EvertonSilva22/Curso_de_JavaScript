@@ -7,9 +7,33 @@
     <meta name="Author" content="Everton Silva">
     <meta name="Keywords" content="HTML5, CSS3, JavaScript">
     <meta name="description" content="Condições aninhadas">
-    <title>Document</title>
+    <title>Horas</title>
 </head>
 <body>
-    
+    <h1>Que horas são?</h1>
+    Que horas são ? :<input type="number" name="horas" id="horas"> Horas
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var horas =   window.document.querySelector('input#horas')
+            var resultado = window.document.querySelector('div#resultado')
+            var hr = Number(horas.value)
+
+            resultado.innerHTML= `Agora são ${hr} horas`
+            if (hr < 6){
+                resultado.innerHTML += `<p>Boa Madrugada!</P>`
+            } else if(hr <= 12){
+                resultado.innerHTML += `<p>Bom dia!</P>`
+            } else if(hr <=18){
+                resultado.innerHTML += `<p>Boa Tarde!</P>`
+            } else if (hr <=24){
+                resultado.innerHTML += `<p>Boa Noite!</P>`
+            }
+        }
+    </script>
 </body>
 </html>
