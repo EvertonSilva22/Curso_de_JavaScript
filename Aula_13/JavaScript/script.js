@@ -3,12 +3,12 @@ function carregar(){
     var imagem = window.document.getElementById('imagem')
     var data = new Date()
     //var hora = data.getHours()
-    var hora = 18
+    var hora = 8
     msg.innerHTML = `Agora são ${hora} horas.`
     if (hora >=0 && hora <12){
         //Bom Dia!
         imagem.src = 'imagens/fotomanha.jpg'
-        document.body.style.background = '#fbe697'
+        document.body.style.background = '#fbe661'
         msg.innerHTML += `<p>Bom Dia!</p>`
     } else if (hora >=12 && hora <18){
         //Boa Tarde!
