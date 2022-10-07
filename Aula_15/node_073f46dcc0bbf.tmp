@@ -1,0 +1,4 @@
+var pizza = 1
+while (pizza <= 8){
+    console.log(`Comer pedaço de pizza ${pizza}`)
+}
